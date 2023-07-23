@@ -127,3 +127,6 @@ export NVM_DIR="$HOME/.nvm"
 bindkey '^ ' autosuggest-accept
 # tmux-sessionizer
 bindkey -s ^f "tmux-sessionizer\n"
+
+# Fix GPG_TTY
+export GPG_TTY=$(tty)
