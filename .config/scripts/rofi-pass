@@ -43,7 +43,7 @@ notify='false'
 help_color=""
 clip=primary
 clip_clear=45
-default_user="${ROFI_PASS_DEFAULT_USER-$(whoami)}"
+default_user=:filename
 default_user2=john_doe
 password_length=12
 fix_layout=false
@@ -808,10 +808,7 @@ insertPass () {
 		exit
 	fi
 
-	user_content=("${default_user2}"
-		"${USER}"
-		"${default_user}"
-	)
+	user_content=("${USER}")
 
 	user=$(printf '%s\n' "${user_content[@]}" | _rofi -dmenu -mesg "Chose Username or type" -p "> ")
 	val=$?

@@ -108,11 +108,12 @@ fi
 # For a full list of active aliases, run `alias`.
 
 # exa
-alias ls="exa" # ls
+alias ls='exa' # ls
 alias ll='exa -lbF --git' # list, size, type, git
 alias lt='exa --tree --level=2' # tree
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias cat='bat'
 
 # Add Starship
 eval "$(starship init zsh)"
