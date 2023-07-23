@@ -124,7 +124,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Custom keybindings
 # zsh-autosuggestions
-bindkey '^ ' autosuggest-accept
+bindkey '^y' autosuggest-accept
 # tmux-sessionizer
 bindkey -s ^f "tmux-sessionizer\n"
 
