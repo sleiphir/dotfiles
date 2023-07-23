@@ -2,17 +2,15 @@
 command=~/.config/i3blocks/weather/weather_signaler
 interval=once
 
-[WEATHER]
-command=~/.config/i3blocks/weather/weather_info.sh
-interval=300
-color=#FEC925
-signal=2
+[weather]
+command=curl -s "wttr.in/Pessac?format=3"
+interval=600
 
 [CPU]
-full_text= CPU:  0.00% @ +00.0°C
+full_text= CPU:  0.00%
 command=~/.config/i3blocks/cpu/cpu_info.sh
 interval=repeat
-color=#00B4EB
+color=#98c97d
 
 [SOUND]
 full_text= 🔇:  0%
