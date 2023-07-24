@@ -35,9 +35,6 @@ exec --no-startup-id nm-applet
 # Polybar launch script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
-# Keybaord Layout Cycler
-bindsym $mod+u exec --no-startup-id $HOME/.config/scripts/keyboard-layout-cycler
-
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_audio_status exec pkill -SIGRTMIN+1 i3blocks
 bindsym $mod+period exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5% ; $refresh_audio_status
