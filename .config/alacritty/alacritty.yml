@@ -14,7 +14,7 @@ scrolling:
   multiplier: 3
 
 font:
-  size: 15
+  size: 14
   normal:
     family: CodeNewRoman Nerd Font
     style: Regular
