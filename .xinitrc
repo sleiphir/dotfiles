@@ -40,5 +40,8 @@ export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
 fcitx5 &
 
+# Prevent sleep
+xset s off -dpms
+
 # I3 Window Manager
 i3

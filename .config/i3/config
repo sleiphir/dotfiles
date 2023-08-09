@@ -163,45 +163,56 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+    # These bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+    # Pressing left will shrink the window’s width.
+    # Pressing right will grow the window’s width.
+    # Pressing up will shrink the window’s height.
+    # Pressing down will grow the window’s height.
+    bindsym h resize shrink width 10 px or 10 ppt
+    bindsym j resize grow height 10 px or 10 ppt
+    bindsym k resize shrink height 10 px or 10 ppt
+    bindsym l resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+    # same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # back to normal: Enter or Escape or $mod+r
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
-        bindsym $mod+r mode "default"
+    # back to normal: Enter or Escape or $mod+r
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
 }
 
 bindsym $mod+r mode "resize"
 
 mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
-  bindsym l exec i3-msg exit
-  bindsym r exec reboot
-  bindsym s exec shutdown now
-  bindsym Escape mode "default"
-  bindsym Return mode "default"
-
+    bindsym l exec i3-msg exit
+    bindsym r exec reboot
+    bindsym s exec shutdown now
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
 }
 
 bindsym $mod+x mode "exit: [l]ogout, [r]eboot, [s]hutdown"
 
-# password (using rofi front-end to have a quick way of copying passwords from pass
-bindsym $mod+p exec "PINENTRY_USER_DATA=gtk /home/sleiphir/.config/scripts/rofi-pass"
-bindsym $mod+Shift+p exec "PINENTRY_USER_DATA=gtk /home/sleiphir/.config/scripts/rofi-pass --insert"
+mode "password: [f]ind, [i]nsert" {
+    # password (using rofi front-end to have a quick way of copying passwords from pass
+    bindsym f exec "PINENTRY_USER_DATA=gtk /home/sleiphir/.config/scripts/rofi-pass", mode "default"
+    bindsym i exec "PINENTRY_USER_DATA=gtk /home/sleiphir/.config/scripts/rofi-pass --insert", mode "default"
+    bindsym Escape mode "default"
+    bindsym Return mode "default"
+}
+
+bindsym $mod+p mode "password: [f]ind, [i]nsert"
+
+# Scratchpad
+# move to scratchpad
+bindsym $mod+Shift+minus move scratchpad
+# show scratchpad
+bindsym $mod+minus scratchpad show
 
 # Start i3bar to display a workspace bar (plus the system information i3status finds out, if available) bar {
 #         status_command i3blocks
