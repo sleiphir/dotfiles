@@ -114,7 +114,11 @@ alias ll='exa -lbF --git' # list, size, type, git
 alias lt='exa --tree --level=2' # tree
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+# better cat
 alias cat='bat'
+# find in files
+alias grepw='grep -rnw $(pwd) -e'
+alias grepc='grep -rn $(pwd) -e'
 
 # Add Starship
 eval "$(starship init zsh)"
