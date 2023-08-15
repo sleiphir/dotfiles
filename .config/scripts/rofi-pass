@@ -6,8 +6,8 @@ basecommand="$0"
 
 # set default settings
 _rofi () {
-    dir="$HOME/.config/rofi/launchers/type-4"
-    theme='style-2'
+    dir="$HOME/.config/rofi/launchers/pass"
+    theme='style'
 
     rofi \
         -theme ${dir}/${theme}.rasi \

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Open a new tmux window with nvim and a file
+file=$1
+filename=$(echo $file | awk -F: '{print $1}')
+line=$(echo $file | awk -F: '{print $2}')
+# Do not open a new window if the file does not exist
+if [ ! -f $filename ]; then
+    exit 1
+fi
+# Set line to 1 if it is not a number
+if [ -z "$line" ]; then
+    line=1
+fi
+tmux new-window "nvim $filename:$line"
