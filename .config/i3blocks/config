@@ -48,6 +48,12 @@ STEP=5%
 # label=HOME 
 # interval=30
 
+[vpn_status]
+command=$HOME/.config/i3blocks/vpn/vpn
+interval=5
+color=#FFFFFF
+markup=pango
+
 [bandwidth3]
 command=$HOME/.config/i3blocks/bandwidth3/bandwidth3
 interval=persist
@@ -65,7 +71,7 @@ PRINTF_COMMAND=printf "%d/%d %s/s\n", rx, wx, unit;
 [memory]
 command=$HOME/.config/i3blocks/memory/memory
 label=MEM 
-interval=30
+interval=10
 
 # CPU usage
 #
@@ -80,7 +86,7 @@ interval=10
 #
 [time]
 command=date '+%Y/%m/%d %H:%M:%S'
-interval=5
+interval=1
 
 # Generic media player support
 #

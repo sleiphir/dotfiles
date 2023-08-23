@@ -61,6 +61,9 @@ bindcode 133 exec "$HOME/.config/rofi/launchers/type-4/launcher.sh"
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# Flameshot
+bindcode 107 exec flameshot gui
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down

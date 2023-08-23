@@ -43,5 +43,8 @@ fcitx5 &
 # Prevent sleep
 xset s off -dpms
 
+# Background
+~/.fehbg &
+
 # I3 Window Manager
 i3
