@@ -1,6 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
+export FZF_BASE=/usr/bin/fzf
+export DISABLE_FZF_AUTO_COMPLETION="false"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -82,6 +85,7 @@ plugins=(
 	copybuffer
 	dirhistory
 	jsontools
+    fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -109,7 +113,7 @@ fi
 # For a full list of active aliases, run `alias`.
 
 # exa
-alias ls='exa' # ls
+alias ls='exa --icons --grid --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group' # ls
 alias ll='exa -lbF --git' # list, size, type, git
 alias lt='exa --tree --level=2' # tree
 # dotfiles
@@ -119,6 +123,11 @@ alias cat='bat'
 # find in files
 alias grepw='grep -rnw $(pwd) -e'
 alias grepc='grep -rn $(pwd) -e'
+alias grepex=_grepex $1
+
+function _grepex() {
+    grep -rnE "$1" $(pwd)
+}
 
 # Add Starship
 eval "$(starship init zsh)"

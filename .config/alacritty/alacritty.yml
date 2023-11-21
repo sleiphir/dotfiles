@@ -4,8 +4,8 @@ env:
 window:
   opacity: 1
   padding:
-    x: 10
-    y: 10
+    x: 0
+    y: 0
   class:
     instance: Alacritty
     general: Alacritty
@@ -13,11 +13,11 @@ window:
 draw_bold_text_with_bright_colors: true
 
 scrolling:
-  history: 10000
+  history: 50000
   multiplier: 3
 
 font:
-  size: 15
+  size: 16
   normal:
     family: IBM Plex Mono
     style: Regular
@@ -37,7 +37,7 @@ shell:
 colors:
   name: Kanagawa
   primary:
-    background: '#181616'
+    background: '#181818'
     foreground: '#c5c9c5'
 
   normal:
