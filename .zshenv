@@ -1,4 +1,4 @@
-path+=('/home/sleiphir/.config/scripts')
+path+=("$HOME/.config/scripts")
 
 # Add go to path
 path+=("/usr/local/go/bin")
