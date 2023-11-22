@@ -3,6 +3,9 @@ path+=('/home/sleiphir/.config/scripts')
 # Add go to path
 path+=("/usr/local/go/bin")
 
+# Add .local/bin to PATH
+path+=("$HOME/.local/bin")
+
 export PATH
 
 # Set vi mode cursor
