@@ -1,10 +1,13 @@
 path+=("$HOME/.config/scripts")
 
+# Add .local/bin to PATH
+path+=("$HOME/.local/bin")
+
 # Add go to path
 path+=("/usr/local/go/bin")
 
-# Add .local/bin to PATH
-path+=("$HOME/.local/bin")
+# Add NeoVim to PATH
+path+=("/usr/local/nvim/bin")
 
 export PATH
 
