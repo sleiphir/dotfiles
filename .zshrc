@@ -112,10 +112,10 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-# exa
-alias ls='exa --icons --grid --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group' # ls
-alias ll='exa -lbF --git' # list, size, type, git
-alias lt='exa --tree --level=2' # tree
+# eza
+alias ls='eza --icons --grid --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group' # ls
+alias ll='eza -lbF --git' # list, size, type, git
+alias lt='eza --tree --level=2' # tree
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 # better cat
