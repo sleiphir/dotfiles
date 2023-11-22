@@ -1,5 +1,8 @@
 path+=('/home/sleiphir/.config/scripts')
 
+# Add go to path
+path+=("/usr/local/go/bin")
+
 export PATH
 
 # Set vi mode cursor
@@ -15,3 +18,4 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export JAVA_HOME=$HOME/.jdks/jdk-20.0.2
 
 export GPG_TTY=$(tty)
+
