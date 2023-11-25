@@ -8,9 +8,9 @@ ZSH_THEME="robbyrussell"
 
 plugins=(
     vi-mode
-	git
-	zsh-autosuggestions
-	sudo
+    git
+    zsh-autosuggestions
+    sudo
     fzf
 )
 
@@ -29,8 +29,6 @@ alias cat='bat'
 alias grepw='grep -rnw $(pwd) -e'
 alias grepc='grep -rn $(pwd) -e'
 alias grepex=_grepex $1
-# alias fzf_pass="find $HOME/.password-store -type f -name '*.gpg' > /dev/null | sed -r 's/^.*password-store\/(.*)\.gpg$/\1/g' | fzf | xargs pass -c"
-# alias i3_fzf_pass='i3-msg -q "exec --no-startup-id $(fzf_pass)"'
 
 function _grepex() {
     grep -rnE "$1" $(pwd)
