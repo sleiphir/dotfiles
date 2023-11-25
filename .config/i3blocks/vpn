@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if systemctl is-active wg-quick@wg0 > /dev/null 2>&1; then
+    echo "VPN<span foreground='#53B86F'> </span>"
+fi
