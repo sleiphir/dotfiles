@@ -43,10 +43,10 @@ STEP=5%
 # The directory defaults to $HOME if the instance is not specified.
 # The script may be called with a optional argument to set the alert
 # (defaults to 10 for 10%).
-# [disk]
-# command=$HOME/.config/i3blocks/disk/disk
-# label=HOME 
-# interval=30
+[disk]
+command=$HOME/.config/i3blocks/disk/disk
+label=HOME 
+interval=30
 
 [vpn_status]
 command=$HOME/.config/i3blocks/vpn/vpn

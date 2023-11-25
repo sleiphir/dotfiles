@@ -1,15 +1,16 @@
 path+=("$HOME/.config/scripts")
-
-# Add .local/bin to PATH
 path+=("$HOME/.local/bin")
-
-# Add go to path
 path+=("/usr/local/go/bin")
-
-# Add NeoVim to PATH
+path+=("/usr/local/zig")
 path+=("/usr/local/nvim/bin")
 
 export PATH
+
+export FZF_BASE=/usr/bin/fzf
+
+export DISABLE_FZF_AUTO_COMPLETION="false"
+
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set vi mode cursor
 export VI_MODE_SET_CURSOR=true
@@ -17,8 +18,4 @@ export VI_MODE_SET_CURSOR=true
 # No Esc delay
 export KEYTIMEOUT=1
 
-# Set JAVA_HOME
-export JAVA_HOME=$HOME/.jdks/jdk-20.0.2
-
 export GPG_TTY=$(tty)
-
