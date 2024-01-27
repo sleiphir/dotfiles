@@ -31,3 +31,7 @@ function _grepex() {
 
 bindkey '^y' autosuggest-accept
 bindkey -s ^f "tmux-sessionizer\n"
+
+# Load asdf
+. /opt/asdf-vm/asdf.sh
+
