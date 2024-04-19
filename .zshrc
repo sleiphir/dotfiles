@@ -25,7 +25,16 @@ alias grepc='grep -rn $(pwd) -e'
 alias grepex=_grepex $1
 alias open='xdg-open'
 alias vim='nvim'
-alias e='editor .'
+alias e=edit $1
+alias dot='dotfiles'
+
+function edit() {
+	if [ -z "$1" ]; then
+		editor .
+	else
+		editor $1
+	fi
+}
 
 function _grepex() {
     grep -rnE "$1" $(pwd)
