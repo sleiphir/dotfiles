@@ -25,6 +25,7 @@ alias grepc='grep -rn $(pwd) -e'
 alias grepex=_grepex $1
 alias open='xdg-open'
 alias vim='nvim'
+alias e='editor .'
 
 function _grepex() {
     grep -rnE "$1" $(pwd)
