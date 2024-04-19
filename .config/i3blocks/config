@@ -5,7 +5,6 @@ command=$HOME/.config/i3blocks/volume
 label=VOL 
 interval=once
 signal=10
-STEP=5%
 
 [disk]
 command=$HOME/.config/i3blocks/disk
@@ -22,9 +21,6 @@ markup=pango
 command=$HOME/.config/i3blocks/bandwidth
 interval=persist
 markup=pango
-LABEL=""
-UNIT=MB
-PRINTF_COMMAND=printf "%d/%d %s/s\n", rx, wx, unit;
 
 [memory]
 command=$HOME/.config/i3blocks/memory
