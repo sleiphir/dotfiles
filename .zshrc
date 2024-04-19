@@ -29,9 +29,7 @@ alias e=edit $1
 alias dot='dotfiles'
 
 function edit() {
-	if ! command -v editor &> /dev/null; then
-		editor=nvim
-	fi
+	editor=nvim
 	if [ -z "$1" ]; then
 		$editor .
 	else
