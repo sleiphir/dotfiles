@@ -143,8 +143,8 @@ bindsym $mod+r mode "resize"
 
 mode "exit: [l]ogout, [r]eboot, [s]hutdown" {
     bindsym l exec i3-msg exit
-    bindsym r exec reboot
-    bindsym s exec shutdown now
+    bindsym r exec /sbin/reboot
+    bindsym s exec /sbin/shutdown now
     bindsym Escape mode "default"
     bindsym Return mode "default"
 }
