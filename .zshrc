@@ -34,7 +34,7 @@ bindkey '^y' autosuggest-accept
 bindkey -s ^f "tmux-sessionizer\n"
 
 # Load asdf
-. /opt/asdf-vm/asdf.sh
+. "$HOME/.asdf/asdf.sh"
 
 # Load fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

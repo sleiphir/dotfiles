@@ -4,7 +4,7 @@ path+=("$HOME/.cargo/bin")
 path+=("/usr/local/go/bin")
 path+=("/usr/local/zig")
 path+=("/usr/local/nvim/bin")
-path+=("$HOME/.asdf/installs/golang/1.22.1/packages/bin")
+path+=("$HOME/.asdf/installs/golang/1.22.2/packages/bin")
 
 export PATH
 
