@@ -1,10 +1,15 @@
 path+=("$HOME/.config/scripts")
 path+=("$HOME/.local/bin")
+path+=("$HOME/.cargo/bin")
 path+=("/usr/local/go/bin")
 path+=("/usr/local/zig")
 path+=("/usr/local/nvim/bin")
+path+=("$HOME/.asdf/installs/golang/1.22.1/packages/bin")
 
 export PATH
+
+# Set zsh compdump location
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
