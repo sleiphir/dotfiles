@@ -1,7 +1,4 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
-include $HOME/.config/i3/workspaces.conf
-set $monitor_1 DP-0
-set $monitor_2 DP-2
 set $mod Mod1
 set $terminal "alacritty -e tmux"
 
