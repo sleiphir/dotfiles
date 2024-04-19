@@ -6,7 +6,7 @@ set $terminal "alacritty -e tmux"
 default_border none
 default_floating_border pixel 1
 
-font pango:IBM Plex Mono 12
+font pango:BlexMono Nerd Font 12
 
 # Picom
 exec_always --no-startup-id picom &
@@ -31,10 +31,10 @@ bindsym $mod+Return exec $terminal
 bindsym $mod+q kill
 
 # Dmenu
-bindcode 133 exec i3-dmenu-desktop --dmenu="dmenu -nb '#202020' -sf  '#202020' -sb '#F0F0F0' -nf '#F0F0F0' -i -fn 'IBM Plex Mono-12'"
+bindcode 133 exec i3-dmenu-desktop --dmenu="dmenu -nb '#202020' -sf  '#202020' -sb '#F0F0F0' -nf '#F0F0F0' -i -fn 'BlexMono Nerd Font-12'"
 
 # Passmenu
-bindsym $mod+p exec i3-dmenu-desktop --dmenu="passmenu -nb '#202020' -sf  '#202020' -sb '#F0F0F0' -nf '#F0F0F0' -i -fn 'IBM Plex Mono-12'"
+bindsym $mod+p exec i3-dmenu-desktop --dmenu="passmenu -nb '#202020' -sf  '#202020' -sb '#F0F0F0' -nf '#F0F0F0' -i -fn 'BlexMono Nerd Font-12'"
 
 # Flameshot
 bindcode 107 exec flameshot gui
