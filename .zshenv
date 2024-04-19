@@ -1,9 +1,5 @@
 path+=("$HOME/.config/scripts")
 path+=("$HOME/.local/bin")
-path+=("$HOME/.cargo/bin")
-path+=("/usr/local/go/bin")
-path+=("/usr/local/zig")
-path+=("/usr/local/nvim/bin")
 path+=("$HOME/.asdf/installs/golang/1.22.2/packages/bin")
 
 export PATH
