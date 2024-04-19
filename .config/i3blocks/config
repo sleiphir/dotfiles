@@ -3,17 +3,17 @@ separator_block_width=30
 [battery]
 command=$HOME/.config/i3blocks/battery
 interval=30
-label=BAT
+label=
 
 [volume]
 command=$HOME/.config/i3blocks/volume
-label=VOL
+label=
 interval=once
 signal=10
 
 [disk]
 command=$HOME/.config/i3blocks/disk
-label=HOME
+label=
 interval=30
 
 [vpn]
@@ -30,12 +30,12 @@ label=
 
 [memory]
 command=$HOME/.config/i3blocks/memory
-label=MEM
+label=
 interval=10
 
 [cpu_usage]
 command=$HOME/.config/i3blocks/cpu_usage
-label=CPU
+label=
 interval=10
 
 [time]
