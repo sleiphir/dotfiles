@@ -1,0 +1,32 @@
+[user]
+	email = simon.lasbrugnas@gmail.com
+	name = Simon Lasbrugnas
+	signingkey = 86039876BA6ED8DE
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = main
+[color]
+	ui = auto
+[difftool]
+	prompt = false
+[alias]
+	lola = log --graph --pretty='format:%C(auto)%h %d %s %C(green)(%ad) %C(cyan)<%an>' --abbrev-commit --all --date=relative
+	lol = log --graph --pretty='format:%C(auto)%h %d %s %C(green)(%ad) %C(cyan)<%an>' --abbrev-commit --date=relative
+	blame = blame -w -C -C -C
+	recent = for-each-ref --sort=-committerdate refs/heads --format='%(authordate:short) (%(authorname)) %(color:red)%(objectname:short) %(color:yellow)%(refname:short)%(color:reset) (%(color:green)%(committerdate:relative)%(color:reset)) %(color:blue)%(subject)'
+[pull]
+	rebase = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+# Work specific configuration
+[includeIf "gitdir:~/work/weproov/"]
+	path = ~/.gitconfig_work
+[url "git@github.com-weproov:ProovGroup"]
+	insteadOf = https://github.com/ProovGroup
+[url "git@github.com-weproov:ProovGroup"]
+	insteadOf = git@github.com:ProovGroup
