@@ -45,6 +45,9 @@ bindsym $mod+Shift+minus move scratchpad
 # show scratchpad
 bindsym $mod+minus scratchpad show
 
+# disable focus wrapping
+focus_wrapping no
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
