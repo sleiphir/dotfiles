@@ -24,9 +24,9 @@
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 # Work specific configuration
-[includeIf "gitdir:~/work/weproov/"]
-	path = ~/.gitconfig_work
 [url "git@github.com-weproov:ProovGroup"]
 	insteadOf = https://github.com/ProovGroup
 [url "git@github.com-weproov:ProovGroup"]
 	insteadOf = git@github.com:ProovGroup
+[includeIf "gitdir:~/work/weproov/"]
+	path = ~/.gitconfig_work
