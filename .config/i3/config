@@ -34,7 +34,9 @@ bindsym $mod+q kill
 bindcode 133 exec i3-dmenu-desktop --dmenu="dmenu -nb '#202020' -sf  '#202020' -sb '#F0F0F0' -nf '#F0F0F0' -i -fn 'BlexMono Nerd Font-12'"
 
 # Passmenu
-bindsym $mod+p exec i3-dmenu-desktop --dmenu="passmenu -nb '#202020' -sf  '#202020' -sb '#F0F0F0' -nf '#F0F0F0' -i -fn 'BlexMono Nerd Font-12'"
+# bindsym $mod+p exec i3-dmenu-desktop --dmenu="passmenu -nb '#202020' -sf  '#202020' -sb '#F0F0F0' -nf '#F0F0F0' -i -fn 'BlexMono Nerd Font-12'"
+bindsym $mod+p exec --no-startup-id rofi-pass 
+bindsym $mod+shift+p exec --no-startup-id rofi-pass --insert
 
 # Flameshot
 bindcode 107 exec flameshot gui
