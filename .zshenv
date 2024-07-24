@@ -1,6 +1,6 @@
 path+=("$HOME/.config/scripts")
 path+=("$HOME/.local/bin")
-path+=("$HOME/.asdf/installs/golang/1.22.2/packages/bin")
+path+=("$HOME/.asdf/installs/golang/1.22.3/packages/bin")
 
 export PATH
 

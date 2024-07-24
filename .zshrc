@@ -51,7 +51,6 @@ alias grepw='grep -rnw $(pwd) -e'
 alias grepc='grep -rn $(pwd) -e'
 alias grepex=_grepex $1
 alias open='xdg-open'
-alias vim='nvim'
 alias e=edit $1
 alias dot='dotfiles'
 
@@ -122,3 +121,11 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
+
+# Incremental history search
+autoload -U up-line-or-beginning-search
+autoload -U down-line-or-beginning-search
+zle -N up-line-or-beginning-search
+zle -N down-line-or-beginning-search
+bindkey "^[[A" up-line-or-beginning-search
+bindkey "^[[B" down-line-or-beginning-search
