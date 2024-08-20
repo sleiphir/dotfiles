@@ -1,6 +1,7 @@
 path+=("$HOME/.config/scripts")
 path+=("$HOME/.local/bin")
-path+=("$HOME/.asdf/installs/golang/1.22.3/packages/bin")
+path+=("$HOME/.asdf/shims")
+path+=("$HOME/.asdf/installs/golang/$(go version | awk '{print $3}' | sed 's/[a-z]*//')/packages/bin")
 
 export PATH
 
