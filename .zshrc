@@ -53,6 +53,8 @@ alias grepex=_grepex $1
 alias open='xdg-open'
 alias e=edit $1
 alias dot='dotfiles'
+alias calc='python -ic "from math import *"'
+alias htop='btop'
 
 function edit() {
 	editor=nvim
