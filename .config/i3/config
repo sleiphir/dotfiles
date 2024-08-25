@@ -1,6 +1,6 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 set $mod Mod1
-set $terminal "alacritty -e tmux"
+set $terminal "kitty"
 
 # No window border
 default_border none

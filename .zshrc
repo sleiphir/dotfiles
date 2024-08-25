@@ -46,13 +46,13 @@ zinit cdreplay -q
 alias ls='eza --icons --grid --classify --colour=auto --sort=type --group-directories-first --header --modified --created --git --binary --group' # ls
 alias ll='eza -lbF --git' # list, size, type, git
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dot='dotfiles'
 alias cat='bat'
 alias grepw='grep -rnw $(pwd) -e'
 alias grepc='grep -rn $(pwd) -e'
 alias grepex=_grepex $1
 alias open='xdg-open'
 alias e=edit $1
-alias dot='dotfiles'
 alias calc='python -ic "from math import *"'
 alias htop='btop'
 
