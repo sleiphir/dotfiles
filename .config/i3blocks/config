@@ -3,6 +3,7 @@ separator_block_width=30
 [battery]
 command=$HOME/.config/i3blocks/battery
 interval=30
+BAT_NUMBER=1
 label=
 
 [volume]
