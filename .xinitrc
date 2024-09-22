@@ -47,4 +47,6 @@ xset s off -dpms
 ~/.fehbg &
 
 # I3 Window Manager
-i3
+export XDG_SESSION_TYPE=x11
+export GDK_BACKEND=x11
+exec gnome-session
