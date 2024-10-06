@@ -7,6 +7,9 @@ path+=("$HOME/.asdf/shims")
 # Go
 path+=("$HOME/.asdf/installs/golang/$(go version | awk '{print $3}' | sed 's/[a-z]*//')/packages/bin")
 
+# Rust
+path+=("$HOME/.asdf/installs/rust/$(cargo version | awk '{print $2}')/bin")
+
 # Neovim
 path+=("/opt/nvim-linux64/bin")
 
