@@ -1,7 +1,14 @@
 path+=("$HOME/.config/scripts")
 path+=("$HOME/.local/bin")
+
+# asdf
 path+=("$HOME/.asdf/shims")
+
+# Go
 path+=("$HOME/.asdf/installs/golang/$(go version | awk '{print $3}' | sed 's/[a-z]*//')/packages/bin")
+
+# Neovim
+path+=("/opt/nvim-linux64/bin")
 
 export PATH
 
