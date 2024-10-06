@@ -1,0 +1,17 @@
+[/]
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+home=@as []
+mic-mute=['Pause']
+screensaver=['<Super>Escape']
+search=@as []
+terminal=['<Super>t']
+
+[custom-keybindings/custom0]
+binding='<Super>Return'
+command='/home/simon/.config/scripts/kitty.sh'
+name='terminal'
+
+[custom-keybindings/custom1]
+binding='<Super>p'
+command='/home/simon/.config/scripts/rofi-pass'
+name='passwords'
