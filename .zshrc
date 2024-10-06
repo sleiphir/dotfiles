@@ -56,6 +56,7 @@ alias e=edit $1
 alias calc='python -ic "from math import *"'
 alias htop='btop'
 alias x='exit'
+alias :q='exit' # skill issue
 
 function edit() {
 	editor=nvim
