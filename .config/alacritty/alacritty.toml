@@ -1,37 +1,34 @@
-import = [
-	"~/.config/alacritty/font.toml"
-]
 
 [colors]
 draw_bold_text_with_bright_colors = true
 
 [colors.bright]
-black = "#585146"
-red = "#d3643b"
-green = "#a7da1e"
-yellow = "#f4d370"
-blue = "#94c7b6"
-magenta = "#e61f44"
-cyan = "#edebe6"
-white = "#edebe6"
+black = "#27272a"
+red = "#f5a191"
+green = "#90b99f"
+yellow = "#f0c5a9"
+blue = "#aca1cf"
+magenta = "#aca1cf"
+cyan = "#e29eca"
+white = "#ea83a5"
 
 [colors.cursor]
-cursor = "#d1d1d1"
-text = "#1a1a19"
+cursor = "#c1c0d4"
+text = "#353539"
 
 [colors.normal]
 black = "#000000"
-red = "#d3643b"
-green = "#a7da1e"
-yellow = "#f4d370"
-blue = "#94c7b6"
-magenta = "#e61f44"
-cyan = "#edebe6"
-white = "#edebe6"
+red = "#ffae9f"
+green = "#9dc6ac"
+yellow = "#f0c5a9"
+blue = "#b9aeda"
+magenta = "#ecaad6"
+cyan = "#f591b2"
+white = "#cac9dd"
 
 [colors.primary]
-background = "#161617"
-foreground = "#c5c9c5"
+background = "#121212"
+foreground = "#c9c7cd"
 
 [env]
 TERM = "xterm-256color"
@@ -40,8 +37,8 @@ TERM = "xterm-256color"
 history = 20000
 multiplier = 3
 
-[shell]
-program = "/usr/bin/zsh"
+[terminal.shell]
+program = "tmux"
 
 [window]
 opacity = 1
@@ -53,3 +50,11 @@ instance = "Alacritty"
 [window.padding]
 x = 0
 y = 0
+
+[general]
+live_config_reload = true
+import = [
+	"~/.config/alacritty/font.toml"
+]
+
+[terminal]
