@@ -29,5 +29,9 @@
 	insteadOf = https://github.com/ProovGroup
 [url "git@github.com-weproov:ProovGroup"]
 	insteadOf = git@github.com:ProovGroup
+[url "git@github.com-weproov:SimonWeProov"]
+	insteadOf = https://github.com/SimonWeProov
+[url "git@github.com-weproov:SimonWeProov"]
+	insteadOf = git@github.com:SimonWeProov
 [includeIf "gitdir:~/work/weproov/"]
 	path = ~/.gitconfig_work
