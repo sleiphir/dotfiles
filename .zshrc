@@ -17,14 +17,18 @@ fi
 # Source zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
+# Enable case-insensitive completion
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+zstyle ':completion:*:*:*:*:*' menu select
+
 # Add Powerlevel10k
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
 # Add plugins
-zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zinit light zdharma-continuum/fast-syntax-highlighting
 
 # Add snippets
 zinit snippet OMZP::git
@@ -36,6 +40,7 @@ zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 
 # Load completions
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=**'
 autoload -Uz compinit && compinit
 
 zinit cdreplay -q
@@ -126,12 +131,15 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
-# Incremental history search
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search
-bindkey "^[[B" down-line-or-beginning-search
+# Load history substring search plugin
+zinit light zsh-users/zsh-history-substring-search
+
+# Disable highlighting (it looks bad)
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=''
+HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND=''
+
+# Bind UP and DOWN arrow keys
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
