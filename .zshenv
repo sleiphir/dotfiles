@@ -42,3 +42,6 @@ export GPG_TTY=$(tty)
 export GTK_THEME=Adwaita:dark
 export GTK2_RC_FILES=/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc
 export QT_STYLE_OVERRIDE=Adwaita-Dark
+
+# Export Anthropic API Key for Avante.nvim
+export ANTHROPIC_API_KEY=$(cat ~/.anthropic_api_key)
