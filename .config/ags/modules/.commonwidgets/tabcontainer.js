@@ -86,7 +86,7 @@ export const TabContainer = ({
             self.shown = `${shownIndex.value}`;
         }),
     });
-    
+
     const mainBox = Box({
         attribute: {
             children: children,

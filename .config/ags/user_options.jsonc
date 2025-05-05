@@ -2,7 +2,7 @@
 //     ~/.config/ags/modules/.configuration/default_options.jsonc
 //
 // vscode: ctrl+click this: file://./modules/.configuration/default_options.jsonc
-// vim: `:vsp` to split window, move cursor to the path, press `gf`. 
+// vim: `:vsp` to split window, move cursor to the path, press `gf`.
 //      `Ctrl-w` twice to switch between the files
 //
 // Limitations of this file:
@@ -10,26 +10,49 @@
 // * Comments are not allowed in or below the actual content
 //   (will be nuked with updates from the UI)
 //
-// 
+//
 // Example: Put this to show 8 (instead of 10) workspaces on the bar
 // "workspaces": {"shown": 8 }
 //
 {
+    "ai": {
+        "defaultGPTProvider": "openrouter_2",
+        "defaultTemperature": 0.5,
+        "enhancements": true,
+        "charsEachUpdate": 50,
+        "keep_alive": -1,
+        "useHistory": false,
+        "safety": true,
+        "writingCursor": " ...",
+        "proxyUrl": null
+    },
     "sidebar": {
         "pages": {
+            "order": [
+                "apis",
+                "tools"
+            ],
+            "defaultPage": "apis",
             "apis": {
+                "order": [
+                    "gemini",
+                    "gpt"
+                ],
                 "defaultPage": "gpt"
-            },
-            "defaultPage": "apis"
+            }
+        },
+        "quickToggles": {
+            "order": [
+                "wifi",
+                "bluetooth",
+                "nightlight",
+                "gamemode",
+                "idleinhibitor",
+                "cloudflarewarp"
+            ]
         },
         "calendar": {
             "expandByDefault": true
-        },
-        "image": {
-            "allowNsfw": false
         }
-    },
-    "ai": {
-        "defaultGPTProvider": "openai"
     }
 }

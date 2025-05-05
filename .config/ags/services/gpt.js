@@ -24,25 +24,25 @@ function guessModelName(model) {
 }
 
 const PROVIDERS = Object.assign({
-    "ollama_llama_3_2": {
-        "name": "Ollama - Llama 3.2",
-        "logo_name": "ollama-symbolic",
-        "description": getString('Ollama - Llama-3.2'),
-        "base_url": 'http://localhost:11434/v1/chat/completions',
-        "key_get_url": "",
-        "requires_key": false,
-        "key_file": "ollama_key.txt",
-        "model": "llama3.2",
-    },
     "openrouter": {
-        "name": "OpenRouter (Llama-3-70B)",
-        "logo_name": "openrouter-symbolic",
+        "name": "Gemini 2.0 Flash",
+        "logo_name": "google-gemini-symbolic",
         "description": getString('A unified interface for LLMs'),
         "base_url": "https://openrouter.ai/api/v1/chat/completions",
         "key_get_url": "https://openrouter.ai/keys",
         "requires_key": true,
         "key_file": "openrouter_key.txt",
-        "model": "meta-llama/llama-3-70b-instruct",
+        "model": "google/gemini-2.0-flash-001",
+    },
+    "openrouter_2": {
+        "name": "DeepSeek v3 (free)",
+        "logo_name": "deepseek-symbolic",
+        "description": getString('A unified interface for LLMs'),
+        "base_url": "https://openrouter.ai/api/v1/chat/completions",
+        "key_get_url": "https://openrouter.ai/keys",
+        "requires_key": true,
+        "key_file": "openrouter_key.txt",
+        "model": "deepseek/deepseek-chat-v3-0324:free",
     },
     "openai": {
         "name": "OpenAI - GPT-3.5",
@@ -267,7 +267,7 @@ class GPTService extends Service {
                             aiResponse.done = true;
                             return;
                         }
-                        
+
                         // aiResponse.addDelta(result.choices[0].delta.content);
                         if (!result.choices[0].delta.content && result.choices[0].delta.reasoning_content) {
                             if (!aiResponse.hasReasoningContent) {
@@ -287,7 +287,7 @@ class GPTService extends Service {
                         }
                     }
                     catch {
-                        aiResponse.addDelta(line + '\n');
+                        //aiResponse.addDelta(line + '\n');
                     }
                 }
                 this.readResponse(stream, aiResponse);
