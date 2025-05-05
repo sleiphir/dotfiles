@@ -96,9 +96,6 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 
-# Load asdf
-. "$HOME/.asdf/asdf.sh"
-
 # Load fzf
 eval "$(fzf --zsh)"
 
