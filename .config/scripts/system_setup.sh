@@ -4,9 +4,6 @@ echo "Installing required tools"
 sudo pacman -S -needed base-devel git alacritty fzf ripgrep tmux zsh pass neovim eza easyeffects noto-fonts-emoji man-db gnome
 echo "Installing required tools done."
 
-# Full Desktop Environment: https://github.com/end-4/dots-hyprland
-bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
-
 # Paru (AUR)
 echo "Installing AUR package manager (paru)"
 sudo pacman -S --needed base-devel
@@ -40,5 +37,9 @@ git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME submodule update --init --recursive
 git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
 echo "Installing dotfiles done."
+
+# Full Desktop Environment: https://github.com/end-4/dots-hyprland
+bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
+
 echo "==== DONE ===="
 
