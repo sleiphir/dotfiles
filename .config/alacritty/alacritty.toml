@@ -19,8 +19,8 @@ general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 4
-y = 4
+x = 8
+y = 8
 
 [general]
 live_config_reload = true
