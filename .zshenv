@@ -5,7 +5,7 @@ path+=("$HOME/.local/bin")
 path+=("$HOME/.asdf/shims")
 
 # Go
-path+=("$HOME/.asdf/installs/golang/$(go version | awk '{print $3}' | sed 's/[a-z]*//')/packages/bin")
+path+=("$HOME/.asdf/installs/golang/$(go version | awk '{print $3}' | sed 's/[a-z]*//')/bin")
 
 # Rust
 path+=("$HOME/.asdf/installs/rust/$(cargo version | awk '{print $2}')/bin")
@@ -45,3 +45,7 @@ export QT_STYLE_OVERRIDE=Adwaita-Dark
 
 # Export Anthropic API Key for Avante.nvim
 export ANTHROPIC_API_KEY=$(cat ~/.anthropic_api_key)
+export OPENAI_API_KEY=$(cat ~/.openai_api_key)
+export DEEPSEEK_API_KEY=$(cat ~/.deepseek_api_key)
+export OPENROUTER_API_KEY=$(cat ~/.openrouter_api_key)
+export OPENROUTER_PROVISION_API_KEY=$(cat ~/.openrouter_provision_api_key)
