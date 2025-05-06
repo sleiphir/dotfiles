@@ -202,8 +202,10 @@ export default () => {
                         child: Box({
                             className: 'spacing-h-10 margin-left-10',
                             children: [
-                                BarResource(getString('Swap Usage'), 'swap_horiz', `LANG=C free | awk '/^Swap/ {if ($2 > 0) printf("%.2f\\n", ($3/$2) * 100); else print "0";}'`,
-                                    `bar-swap-circprog ${userOptions.appearance.borderless ? 'bar-swap-circprog-borderless' : ''}`, 'bar-swap-txt', 'bar-swap-icon'),
+                                BarResource(getString('SSD Usage'), 'pie_chart', `df | grep '.*/$' | awk '{ print $5 }' | sed 's/%//'`,
+                                    `bar-swap-circprog ${userOptions.appearance.borderless ? 'bar-cpu-circprog-borderless' : ''}`, 'bar-swap-txt', 'bar-swap-icon'),
+                                // BarResource(getString('Swap Usage'), 'swap_horiz', `LANG=C free | awk '/^Swap/ {if ($2 > 0) printf("%.2f\\n", ($3/$2) * 100); else print "0";}'`,
+                                //     `bar-swap-circprog ${userOptions.appearance.borderless ? 'bar-swap-circprog-borderless' : ''}`, 'bar-swap-txt', 'bar-swap-icon'),
                                 BarResource(getString('CPU Usage'), 'settings_motion_mode', `LANG=C top -bn1 | grep Cpu | sed 's/\\,/\\./g' | awk '{print $2}'`,
                                     `bar-cpu-circprog ${userOptions.appearance.borderless ? 'bar-cpu-circprog-borderless' : ''}`, 'bar-cpu-txt', 'bar-cpu-icon'),
                             ]

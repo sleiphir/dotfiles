@@ -13,9 +13,9 @@ import { MaterialIcon } from '../../.commonwidgets/materialicon.js';
 
 const AGS_CONFIG_FILE = `${App.configDir}/user_options.jsonc`;
 
-export const chatGPTTabIcon = Icon({
+export const openRouterTabIcon = Icon({
     hpack: 'center',
-    icon: `openai-symbolic`,
+    icon: `openrouter-symbolic`,
 });
 
 const ProviderSwitcher = () => {
@@ -188,7 +188,7 @@ const GPTSettings = () => MarginRevealer({
                     GPTService.temperature = value;
                 },
             }),
-            ConfigGap({ vertical: true, size: 10 }), // Note: size can only be 5, 10, or 15 
+            ConfigGap({ vertical: true, size: 10 }), // Note: size can only be 5, 10, or 15
             Box({
                 vertical: true,
                 hpack: 'center',

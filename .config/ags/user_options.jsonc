@@ -26,6 +26,10 @@
         "writingCursor": " ...",
         "proxyUrl": null
     },
+    "weather": {
+        "city": "Bordeaux",
+        "preferredUnit": "C"
+    },
     "sidebar": {
         "pages": {
             "order": [

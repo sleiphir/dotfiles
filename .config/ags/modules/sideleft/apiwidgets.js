@@ -8,7 +8,7 @@ import { setupCursorHover } from '../.widgetutils/cursorhover.js';
 import GPTService from '../../services/gpt.js';
 import Gemini from '../../services/gemini.js';
 import { GeminiView, geminiCommands, sendMessage as geminiSendMessage, geminiTabIcon } from './apis/gemini.js';
-import { ChatGPTView, chatGPTCommands, sendMessage as chatGPTSendMessage, chatGPTTabIcon } from './apis/chatgpt.js';
+import { ChatGPTView, chatGPTCommands, sendMessage as chatGPTSendMessage, openRouterTabIcon } from './apis/chatgpt.js';
 import { WaifuView, waifuCommands, sendMessage as waifuSendMessage, waifuTabIcon } from './apis/waifu.js';
 import { BooruView, booruCommands, sendMessage as booruSendMessage, booruTabIcon } from './apis/booru.js';
 import { enableClickthrough } from "../.widgetutils/clickthrough.js";
@@ -79,11 +79,11 @@ const APILIST = {
 		"placeholderText": getString('Message Gemini...'),
 	},
 	'gpt': {
-		"name": 'Assistant (GPTs)',
+		"name": 'Assistant (OpenRouter)',
 		"sendCommand": chatGPTSendMessage,
 		"contentWidget": ChatGPTView(chatEntry),
 		"commandBar": chatGPTCommands,
-		"tabIcon": chatGPTTabIcon,
+		"tabIcon": openRouterTabIcon,
 		"placeholderText": getString('Message the model...'),
 	},
 	'waifu': {
