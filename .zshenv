@@ -7,6 +7,9 @@ path+=("$HOME/.asdf/shims")
 # Go
 path+=("$HOME/.asdf/installs/golang/$(go version | awk '{print $3}' | sed 's/[a-z]*//')/bin")
 
+# Node
+path+=("$HOME/.asdf/installs/nodejs/$(node -v | sed 's/v//')/bin")
+
 # Rust
 path+=("$HOME/.asdf/installs/rust/$(cargo version | awk '{print $2}')/bin")
 
@@ -49,3 +52,6 @@ export OPENAI_API_KEY=$(cat ~/.openai_api_key)
 export DEEPSEEK_API_KEY=$(cat ~/.deepseek_api_key)
 export OPENROUTER_API_KEY=$(cat ~/.openrouter_api_key)
 export OPENROUTER_PROVISION_API_KEY=$(cat ~/.openrouter_provision_api_key)
+
+# Man pager
+export MANPAGER="nvim +Man!"
