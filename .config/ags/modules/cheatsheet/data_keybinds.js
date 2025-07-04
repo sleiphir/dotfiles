@@ -88,7 +88,7 @@ export const keybindList = [[
         "icon": "apps",
         "name": "Apps",
         "binds": [
-            { "keys": ["󰖳", "+", "T"], "action": "Launch terminal: foot" },
+            { "keys": ["󰖳", "+", "T"], "action": "Launch terminal: alacritty" },
             { "keys": ["󰖳", "+", "W"], "action": "Launch browser: Firefox" },
             { "keys": ["󰖳", "+", "C"], "action": "Launch editor: vscode" },
             { "keys": ["󰖳", "+", "X"], "action": "Launch editor: GNOME Text Editor" },
