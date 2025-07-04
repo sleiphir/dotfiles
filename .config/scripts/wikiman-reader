@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+cat $1 | html2text | nvim -c "set filetype=markdown" -c "set nomodifiable" -c "set buftype=nofile" -

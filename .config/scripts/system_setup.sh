@@ -9,8 +9,11 @@ echo "Enabling multilib done."
 
 # Tools
 echo "Installing required tools"
-sudo pacman -S --needed --noconfirm base-devel git alacritty fzf ripgrep tmux zsh pass neovim eza easyeffects noto-fonts-cjk noto-fonts-emoji man-db aws-cli zip unzip fcitx5 fcitx5-configtool steam wtype docker docker-compose github-cli
+sudo pacman -S --needed --noconfirm base-devel git alacritty fzf ripgrep tmux zsh pass neovim eza easyeffects noto-fonts-cjk noto-fonts-emoji man-db aws-cli zip unzip fcitx5 fcitx5-configtool steam wtype docker docker-compose github-cli tealdeer wikiman html2text
 echo "Installing required tools done."
+
+# tldr pages
+tldr --update
 
 # Paru (AUR)
 echo "Installing AUR package manager (paru)"
