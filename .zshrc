@@ -60,6 +60,8 @@ alias e=edit $1
 alias calc='python -ic "from math import *"'
 alias htop='btop'
 alias x='exit'
+alias wiki='wikiman -H wikiman-reader'
+alias todo='rg -l "\[ \]" ~/.cache/bujo | xargs -I{} cat {} | glow -p'
 
 function edit() {
 	editor=nvim
@@ -138,3 +140,4 @@ bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
