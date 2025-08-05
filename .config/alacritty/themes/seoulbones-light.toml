@@ -1,0 +1,25 @@
+# Auto-generated from Neovim theme: seoulbones
+# Background: light
+[colors.primary]
+background = "#e2e2e2"
+foreground = "#555555"
+
+[colors.normal]
+black = "#919191"
+red = "#dc5284"
+green = "#6c6b20"
+yellow = "#4a7587"
+blue = "#628562"
+magenta = "#0084a3"
+cyan = "#6d4c52"
+white = "#555555"
+
+[colors.bright]
+black = "#628562"
+red = "#dc5284"
+green = "#000000"
+yellow = "#c48562"
+blue = "#555555"
+magenta = "#7c7c7c"
+cyan = "#be6a84"
+white = "#555555"

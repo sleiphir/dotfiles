@@ -1,0 +1,25 @@
+# Auto-generated from Neovim theme: oldbook
+# Background: light
+[colors.primary]
+background = "#fcf5e6"
+foreground = "#585040"
+
+[colors.normal]
+black = "#9a8f7d"
+red = "#585040"
+green = "#5e6a75"
+yellow = "#72785b"
+blue = "#9a8f7d"
+magenta = "#70553a"
+cyan = "#5e6a75"
+white = "#585040"
+
+[colors.bright]
+black = "#9a8f7d"
+red = "#590008"
+green = "#000000"
+yellow = "#6b5300"
+blue = "#585040"
+magenta = "#72785b"
+cyan = "#9a8f7d"
+white = "#585040"

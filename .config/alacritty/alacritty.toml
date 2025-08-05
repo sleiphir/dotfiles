@@ -12,6 +12,7 @@ multiplier = 3
 program = "tmux"
 
 [window]
+decorations = "None"
 opacity = 1
 
 [window.class]
@@ -19,14 +20,16 @@ general = "Alacritty"
 instance = "Alacritty"
 
 [window.padding]
-x = 8
-y = 8
+x = 4
+y = 6
+
+[font]
+size = 12
+offset.y = 4
 
 [general]
 live_config_reload = true
 import = [
-	"~/.config/alacritty/font.toml",
-	"~/.config/alacritty/zenwritten.toml"
+	"~/.config/alacritty/fonts/jetbrains.toml",
+	"~/.config/alacritty/themes/oldbook-light.toml"
 ]
-
-[terminal]

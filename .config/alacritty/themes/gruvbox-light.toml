@@ -1,0 +1,25 @@
+# Auto-generated from Neovim theme: gruvbox
+# Background: light
+[colors.primary]
+background = "#fbf1c7"
+foreground = "#3c3836"
+
+[colors.normal]
+black = "#a89984"
+red = "#9d0006"
+green = "#79740e"
+yellow = "#79740e"
+blue = "#928374"
+magenta = "#9d0006"
+cyan = "#b57614"
+white = "#3c3836"
+
+[colors.bright]
+black = "#928374"
+red = "#590008"
+green = "#79740e"
+yellow = "#6b5300"
+blue = "#076678"
+magenta = "#8f3f71"
+cyan = "#427b58"
+white = "#3c3836"

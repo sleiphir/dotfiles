@@ -1,0 +1,25 @@
+# Auto-generated from Neovim theme: forestbones
+# Background: light
+[colors.primary]
+background = "#faf3e1"
+foreground = "#4f5b62"
+
+[colors.normal]
+black = "#a99b6a"
+red = "#f85550"
+green = "#73848d"
+yellow = "#dea000"
+blue = "#4f5b62"
+magenta = "#8da200"
+cyan = "#3a94c4"
+white = "#4f5b62"
+
+[colors.bright]
+black = "#9a9071"
+red = "#f85550"
+green = "#000000"
+yellow = "#dea000"
+blue = "#63727a"
+magenta = "#73848d"
+cyan = "#36a87e"
+white = "#4f5b62"

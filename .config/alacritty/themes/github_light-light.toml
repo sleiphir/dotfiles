@@ -1,0 +1,25 @@
+# Auto-generated from Neovim theme: github_light
+# Background: light
+[colors.primary]
+background = "#ffffff"
+foreground = "#1f2328"
+
+[colors.normal]
+black = "#6e7781"
+red = "#d1242f"
+green = "#0a3069"
+yellow = "#9a6700"
+blue = "#6639ba"
+magenta = "#cf222e"
+cyan = "#953800"
+white = "#1f2328"
+
+[colors.bright]
+black = "#57606a"
+red = "#d1242f"
+green = "#1a7f37"
+yellow = "#9a6700"
+blue = "#1f2328"
+magenta = "#0550ae"
+cyan = "#cf222e"
+white = "#1f2328"
