@@ -61,7 +61,9 @@ alias calc='python -ic "from math import *"'
 alias htop='btop'
 alias x='exit'
 alias wiki='wikiman -H wikiman-reader'
-alias todo='rg -l "\[ \]" ~/.cache/bujo | xargs -I{} cat {} | glow -p'
+alias todo='git -C ~/.cache/bujo pull && rg -l "\[ \]" ~/.cache/bujo | xargs -I{} cat {} | glow -p'
+alias pn='pnpm'
+alias vim='nvim'
 
 function edit() {
 	editor=nvim
@@ -141,3 +143,11 @@ bindkey "$terminfo[kcud1]" history-substring-search-down
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+
+# pnpm
+export PNPM_HOME="/home/simon/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
