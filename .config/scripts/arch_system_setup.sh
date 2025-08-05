@@ -44,8 +44,8 @@ echo "asdf setup for (go, rust, zig) done."
 bash <(curl -s "https://end-4.github.io/dots-hyprland-wiki/setup.sh")
 
 # Replace parts of the base setup (will be pulled from my dotfiles)
-rm -rf .config/ags
-rm -rf .config/hypr
+rm -rf $HOME/.config/quickshell
+rm -rf $HOME/.config/hypr
 
 # Dotfiles
 echo "Installing dotfiles..."
