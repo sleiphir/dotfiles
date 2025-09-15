@@ -1,0 +1,25 @@
+# Auto-generated from Neovim theme: hybrid
+# Background: dark
+[colors.primary]
+background = "#1d1f21"
+foreground = "#c5c8c6"
+
+[colors.normal]
+black = "#373b41"
+red = "#d54e53"
+green = "#81a2be"
+yellow = "#b5bd68"
+blue = "#707880"
+magenta = "#b294bb"
+cyan = "#70c0b1"
+white = "#c5c8c6"
+
+[colors.bright]
+black = "#707880"
+red = "#d54e53"
+green = "#000000"
+yellow = "#e7c547"
+blue = "#c5c8c6"
+magenta = "#de935f"
+cyan = "#b294bb"
+white = "#c5c8c6"

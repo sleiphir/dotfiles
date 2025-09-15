@@ -1,0 +1,25 @@
+# Auto-generated from Neovim theme: vague
+# Background: dark
+[colors.primary]
+background = "#141415"
+foreground = "#cdcdcd"
+
+[colors.normal]
+black = "#606079"
+red = "#d8647e"
+green = "#c48282"
+yellow = "#e8b589"
+blue = "#606079"
+magenta = "#6e94b2"
+cyan = "#9bb4bc"
+white = "#cdcdcd"
+
+[colors.bright]
+black = "#606079"
+red = "#d8647e"
+green = "#7fa563"
+yellow = "#f3be7c"
+blue = "#aeaed1"
+magenta = "#aeaed1"
+cyan = "#aeaed1"
+white = "#cdcdcd"

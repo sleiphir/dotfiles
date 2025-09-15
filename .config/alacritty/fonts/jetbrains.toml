@@ -1,16 +1,16 @@
 [font.bold]
 family = "JetBrainsMono Nerd Font"
-style = "Semibold"
+style = "Bold"
 
 [font.bold_italic]
 family = "JetBrainsMono Nerd Font"
-style = "Semibold Italic"
+style = "Bold Italic"
 
 [font.italic]
 family = "JetBrainsMono Nerd Font"
-style = "Light Italic"
+style = "Italic"
 
 [font.normal]
 family = "JetBrainsMono Nerd Font"
-style = "Light"
+style = "Regular"
 

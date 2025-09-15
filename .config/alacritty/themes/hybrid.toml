@@ -1,0 +1,37 @@
+[colors.primary]
+background = "#1d1f21"  # black
+foreground = "#c5c8c6"  # white
+
+[colors.cursor]
+text = "#1d1f21"        # black
+cursor = "#c5c8c6"      # white
+
+[colors.normal]
+black = "#1d1f21"       # black
+red = "#cc6666"         # red
+green = "#b5bd68"       # green
+yellow = "#f0c674"      # yellow
+blue = "#81a2be"        # blue
+magenta = "#b294bb"     # magenta
+cyan = "#8abeb7"        # cyan
+white = "#c5c8c6"       # white
+
+[colors.bright]
+black = "#373b41"       # bright_black
+red = "#d54e53"         # bright_red
+green = "#b9ca4a"       # bright_green
+yellow = "#e7c547"      # bright_yellow
+blue = "#7aa6da"        # bright_blue
+magenta = "#c397d8"     # bright_magenta
+cyan = "#70c0b1"        # bright_cyan
+white = "#eaeaea"       # bright_white
+
+[colors.dim]
+black = "#151718"       # dull_black
+red = "#a54242"         # dull_red
+green = "#8c9440"       # dull_green
+yellow = "#de935f"      # dull_yellow
+blue = "#5f819d"        # dull_blue
+magenta = "#85678f"     # dull_magenta
+cyan = "#5e8d87"        # dull_cyan
+white = "#707880"       # dull_white
